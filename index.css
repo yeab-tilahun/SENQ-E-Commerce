@@ -1,0 +1,18 @@
+.custom{
+    background-color: #a59c9b; outline-color: #a59c9b;
+    
+    padding-right:4em;
+    /* padding: 4px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    border: none;
+    border-radius: 12px;
+}
+.button_cat{
+    background-color: #dfd3d1;
+    padding-left: 25px;
+    padding-right: 25px;
+}
