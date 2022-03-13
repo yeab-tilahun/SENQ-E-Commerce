@@ -1,3 +1,6 @@
+body{
+    background-color: #fbf3f8;
+}
 .custom{
     background-color: #a59c9b; outline-color: #a59c9b;
     
@@ -15,4 +18,18 @@
     background-color: #dfd3d1;
     padding-left: 25px;
     padding-right: 25px;
+    margin-left: 50px;
+    margin-right:  50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+}
+.topnav{
+    background-color: #fbf3f8;
+    margin-left: 50px;
+    margin-right:  50px;
+}
+.slide{
+    margin-left: 50px;
+    margin-right:  50px;
 }
