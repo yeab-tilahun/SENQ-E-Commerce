@@ -1,0 +1,4 @@
+[2022-3-29 13:13:54] layer "Your Image Here.png": Duplicate path: Your Image Here.png
+[2022-3-29 13:13:54] layer "Icon.png": Duplicate path: Icon.png
+[2022-3-29 13:13:54] layer "Icon.png": Duplicate path: Icon.png
+[2022-3-29 13:13:54] layer "Group 1.png": Duplicate path: Group 1.png

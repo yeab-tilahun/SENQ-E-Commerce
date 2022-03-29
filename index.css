@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #fbf3f8;
 }
@@ -24,6 +27,9 @@ body{
     padding-bottom: 10px;
     border-radius: 12px;
 }
+.img-rounded{
+    border-radius: 15px;
+}
 .topnav{
     background-color: #fbf3f8;
     margin-left: 50px;
@@ -32,4 +38,21 @@ body{
 .slide{
     margin-left: 50px;
     margin-right:  50px;
+}
+/*shop with category*/
+.main-cat::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.cat_section{
+    float: left;
+    width: 30%;
+    padding: 5px;
+}
+.img{
+    border-radius: 15px;   
+}
+.cat_name{
+text-align: center;
 }
