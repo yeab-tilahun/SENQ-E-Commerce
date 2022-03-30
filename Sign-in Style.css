@@ -14,9 +14,9 @@ html,body{
     background: linear-gradient(to right,rgb(255, 255, 255) 0%, rgb(252, 178, 178) 100%);
 }
 
-/* ::selection{
+::selection{
     background: #ff80bf;
-} */
+}
 
 .container{
     background: white;
@@ -157,3 +157,8 @@ html,body{
       text-align: center;
 
   }
+  .container .trade{
+    text-align: center;
+    font-size: 12px;
+   
+}
