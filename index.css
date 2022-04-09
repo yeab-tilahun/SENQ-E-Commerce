@@ -40,7 +40,40 @@ body{
     margin-right:  50px;
 }
 /*shop with category*/
-.main-cat::after{
+.whole{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+ }
+ .shop{
+     text-align: left;
+     margin-right: 45px;
+ }
+ .label{
+     text-align: center;
+     margin-top: 50px;
+ }
+ .cat_tag{
+     font-size: 15px;
+     background-color: #bdbdbd;
+     width: 140px;
+     height: 20px;
+     border-radius: 50px ;
+     text-align: left;
+     display: inline-block;
+     padding-top: 3px;
+     padding-left: 3px;
+     margin: 0 100px;
+ }
+ img{
+     display: inline-block;
+     margin: 0 60px;
+     margin-top: 30px;
+ }
+ 
+ 
+/* .main-cat::after{
     content: "";
     clear: both;
     display: table;
@@ -55,4 +88,4 @@ body{
 }
 .cat_name{
 text-align: center;
-}
+} */
