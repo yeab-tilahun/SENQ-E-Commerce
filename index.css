@@ -48,7 +48,8 @@ body{
  }
  .shop{
      text-align: left;
-     margin-right: 45px;
+     margin-left: 50px;
+     margin-top: 30px;
  }
  .label{
      text-align: center;
@@ -66,7 +67,7 @@ body{
      padding-left: 3px;
      margin: 0 100px;
  }
- img{
+ .whole img{
      display: inline-block;
      margin: 0 60px;
      margin-top: 30px;
