@@ -7,14 +7,39 @@
     <title>Add Product</title>
     <link rel="stylesheet" href="AddProduct.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="AdminMain.css">
+    <link rel="icon" href="Images/favicon.ico">
+
 </head>
 
 <!-- Each textbox,label or textarea is included in its own article element and 
      those article elements are under one section element. -->
 
 <body>
-    <header class="head">
-        <h2>Add Product</h2>
+    <nav class="slidemenu">
+        
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 20,5" stroke="#000" stroke-width="2"/>
+                    <path d="M0,14 20,14" stroke="#000" stroke-width="2"/>
+                    <path d="M0,23 20,23" stroke="#000" stroke-width="2"/>
+                </svg>
+                <img src="/Images/Logo.png" alt="Senq_Logo" width="40%" height="20%">
+            </a>
+        </span>
+    </nav>
+
+    <header id="sidemenu">
+        <!-- <div id="sidemenu"> -->
+        
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="AdminMain.html">Home</a>
+            <a href="#">Profile</a>
+            <a href="AddProduct.html">Products </a>
+            <a href="#"> Statistics</a>
+     
+    <!-- </div> -->
     </header>
 
     <section class="container">
@@ -102,42 +127,27 @@
 
             <tr>
                 <td colspan="2">
-                    <textarea name="description" id="1" cols="60" rows="10" placeholder="Product Description"></textarea>
+                    <textarea name="description" id="1" cols="20" rows="10" placeholder="Product Description"></textarea>
 
                 </td>
             </tr>
         </table>
 
-        <!-- <article class="pname">
-           
-             <article class="underline"></article> 
-        </article>
-
-        <article class="price">
-           
-             <article class="underline"></article> 
-        </article>
-
-        <article class="quantity">
-            
-             <article class="underline"></article> 
-        </article>
-
-
-        <article class="com">  catagory 
-          
-        </article>
-
-        <article class="stars">  Stars 
-          
-          </article>
-
-        <article class="status">  status 
-           
-             <article class="underline"></article> 
-        </article>
-        <article class="desc">  Product Description 
-        </article> -->
+        <script>
+            function openSlideMenu(){
+                document.getElementById('sidemenu').style.width='250px';
+                document.getElementById('main').style.marginLeft='250px';
+    
+            }
+        </script>
+    
+    <script>
+        function closeSlideMenu(){
+            document.getElementById('sidemenu').style.width='0';
+            document.getElementById('main').style.marginLeft='0';
+    
+        }
+    </script>
 
         
 
