@@ -53,23 +53,21 @@ body{
  }
  .label{
      text-align: center;
-     margin-top: 50px;
+     margin-top: 20px;
  }
  .cat_tag{
-     font-size: 15px;
-     background-color: #bdbdbd;
+     font-size: 20px;
+     font-weight: 400;
      width: 140px;
      height: 20px;
-     border-radius: 50px ;
-     text-align: left;
      display: inline-block;
      padding-top: 3px;
      padding-left: 3px;
-     margin: 0 100px;
+     margin: 0 150px;
  }
  .whole img{
      display: inline-block;
-     margin: 0 60px;
+     margin: 0 110px;
      margin-top: 30px;
  }
  
