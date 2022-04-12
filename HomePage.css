@@ -23,6 +23,7 @@ body{
     padding-right: 25px;
     margin-left: 50px;
     margin-right:  50px;
+    margin-bottom: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 12px;
@@ -50,26 +51,49 @@ body{
     text-align: left;
     margin-left: 50px;
     margin-top: 30px;
+    margin-bottom: 40px;
 }
- .label{
-     text-align: center;
-     margin-top: 20px;
- }
  .cat_tag{
      font-size: 20px;
      font-weight: 400;
-     width: 140px;
-     height: 20px;
      display: inline-block;
-     padding-top: 3px;
-     padding-left: 3px;
-     margin: 0 150px;
  }
- .all{
+ .all_img{
      display: inline-block;
-     margin: 0 110px;
-     margin-top: 30px;
+     margin: 0 35px;
+     margin-top: 50px;
+    
+
+     width: 210px;
+     height: 230px;
+     position: absolute;
  }
+ .img_container{
+     display: inline-flex;
+    margin: 0 90px;
+
+ }
+ /* second images */
+ .img2nd_container{
+    display: inline-flex;
+    margin: 0 90px;
+ }
+ .all2nd_img{
+    display: inline-block;
+    margin: 0 35px;
+    margin-top: 350px;
+   
+
+    width: 210px;
+    height: 210px;
+    position: absolute;
+}
+.cat2nd_tag{
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 300px;
+}
  
  /* Latest, Bestseller, Rating */
  .whole {
@@ -82,7 +106,7 @@ body{
 .label2 {
     display:flex;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 300px;
     margin-left: 8px;
 }
 
