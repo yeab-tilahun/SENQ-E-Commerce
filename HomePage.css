@@ -67,6 +67,7 @@ body{
      width: 210px;
      height: 230px;
      position: absolute;
+     border-radius: 10px;
  }
  .img_container{
      display: inline-flex;
@@ -87,6 +88,7 @@ body{
     width: 210px;
     height: 210px;
     position: absolute;
+    border-radius: 10px;
 }
 .cat2nd_tag{
     font-size: 20px;
@@ -157,6 +159,7 @@ button:focus {
 }
 
 .style_img {
+    /* to reverse the original image */
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     margin-left: 765px;
