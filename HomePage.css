@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 body{
     background-color: #fbf3f8;
@@ -231,3 +233,130 @@ button:focus {
     font-weight: 450;
 }
 
+/*Latest, Bestseller, Rating*/
+
+  
+  /* to arrange all products in line */
+  .product-box{
+      margin-top: 200px;
+  }
+  .product-minimal .showcase {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid hsl(0, 0%, 93%);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  
+  /* to make the products in 3 grid */
+  .product-minimal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* style for price */
+  .product-minimal .price {
+    font-size: 14px;
+    font-weight: 700;
+    color: cadetblue;
+    margin-bottom: 5px;
+  }
+  
+  /* style for title above the products */
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0, 1%, 44%, 0.308);
+    margin-bottom: 15px;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* product name */
+  .product-minimal .showcase-title {
+    color: black;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* this is necessary to make the text ellipsis when it overflow */
+  a h4 {
+    width: 250px;
+  }
+  
+  .product-showcase a {
+    text-decoration: none;
+  }
+  
+  .product-showcase img {
+    border-radius: 10px;
+  }
+  
+  /* style for add to cart button generated from a website*/
+  .product-showcase button {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+  }
+  
+  .product-showcase button:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+  }
+  
+  .product-showcase button:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+  }
+  
+  .product-showcase button:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+  }
+  
+  .product-showcase button:focus {
+    outline: 1px transparent;
+  }
+  
+  .product-showcase button:before {
+    display: none;
+  }
+  
+  .product-showcase button:-webkit-details-marker {
+    display: none;
+  }
