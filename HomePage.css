@@ -360,3 +360,12 @@ button:focus {
   .product-showcase button:-webkit-details-marker {
     display: none;
   }
+  /* style for products image */
+  .product-box img{
+    transition: 0.2s;
+    width: 150px;
+  }
+  
+  .product-box img:hover {
+    transform: scale(1.2);
+  }
