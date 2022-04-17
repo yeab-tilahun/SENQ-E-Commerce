@@ -1,15 +1,18 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     background-color: #fbf3f8;
 }
-.custom{
-    background-color: #a59c9b; outline-color: #a59c9b;
-    
-    padding-right:4em;
+
+.custom {
+    background-color: #a59c9b;
+    outline-color: #a59c9b;
+
+    padding-right: 4em;
     /* padding: 4px; */
     text-align: center;
     text-decoration: none;
@@ -19,268 +22,150 @@ body{
     border: none;
     border-radius: 12px;
 }
-.button_cat{
+
+.button_cat {
     background-color: #dfd3d1;
     padding-left: 25px;
     padding-right: 25px;
     margin-left: 50px;
-    margin-right:  50px;
+    margin-right: 50px;
     margin-bottom: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 12px;
 }
-.img-rounded{
+
+.img-rounded {
     border-radius: 15px;
 }
-.topnav{
+
+.topnav {
     background-color: #fbf3f8;
     margin-left: 50px;
-    margin-right:  50px;
+    margin-right: 50px;
 }
-.slide{
+
+.slide {
     margin-left: 50px;
-    margin-right:  50px;
+    margin-right: 50px;
 }
+
 /*shop with category*/
-.whole{
-    
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
- }
- .shop{
-    text-align: left;
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
- .cat_tag{
-     font-size: 20px;
-     font-weight: 400;
-     display: inline-block;
- }
- .all_img{
-     display: inline-block;
-     margin: 0 35px;
-     margin-top: 50px;
-    
-
-     width: 210px;
-     height: 230px;
-     position: absolute;
-     border-radius: 10px;
- }
- .img_container{
-     display: inline-flex;
-    margin: 0 90px;
-
- }
- /* second images */
- .img2nd_container{
-    display: inline-flex;
-    margin: 0 90px;
- }
- .all2nd_img{
-    display: inline-block;
-    margin: 0 35px;
-    margin-top: 350px;
-   
-
-    width: 210px;
-    height: 210px;
-    position: absolute;
-    border-radius: 10px;
-}
-.cat2nd_tag{
-    font-size: 20px;
-    font-weight: 400;
-    display: inline-block;
-    margin-top: 300px;
-}
- 
- /* Latest, Bestseller, Rating */
- .whole {
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-.label2 {
-    display:flex;
-    text-align: center;
-    margin-top: 300px;
-    margin-left: 8px;
-}
-
-.btn_cat {
-    margin: 0 148px;
-    border: none;
-    background-color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-right: 80px;
-    margin-bottom: 0px;
-}
-
-.all_btn {
-    display: inline;
-}
-
-button:focus {
-    border: 2px #dfd3d1;
-    background-color: #dfd3d1;
-}
-
-.list {
-    background-color: #dfd3d1;
-    height: 470px;
-    margin-left: 157px;
-    margin-right: 157.5px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-top: 0px;
-}
-
-.content_header {
-    display: inline;
-    padding-left: 30px;
-}
-
-.content_btn {
+/* to make the products in 4 grid */
+.main-container {
     display: flex;
-    justify-content: right;
-    margin-bottom: 10px;
-}
-
-.list_img {
-    display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     position: relative;
+    margin-top: 20px;
 }
 
-.style_img {
-    /* to reverse the original image */
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    margin-left: 765px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-
-.list_img button {
-    visibility: visible;
-}
-
-.list_img img:hover {
-    opacity: 0.4;
-}
-
-.list_img img:hover .list_img button {
-    display: block;
-}
-
-.cart_btn1 {
-    /* position: absolute;
-    height: 25px;
-    left: 110px;
-    top: 240px; */
-    display: flex;
-    background-color: #5c636a;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-weight: 450;
-}
-
-.cart_btn2 {
-    /* position: absolute;
-    height: 25px;
-    left: 355px;
-    top: 240px; */
-    display: flex;
-    background-color: #5c636a;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-weight: 450;
-}
-
-.cart_btn3 {
-    /* position: absolute;
-    height: 25px;
-    left: 595px;
-    top: 240px; */
-    display: flex;
-    background-color: #5c636a;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-weight: 450;
-}
-
-.cart_btn4 {
-    /* position: absolute; */
-    display: flex;
-    /* height: 25px;
-    left: 840px;
-    top: 240px; */
-    background-color: #5c636a;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-weight: 450;
-}
-
-/*Latest, Bestseller, Rating*/
-
-  
-  /* to arrange all products in line */
-  .product-box{
-      margin-top: 200px;
-  }
-  .product-minimal .showcase {
-    display: flex;
+/* to arrange all products in line */
+.sub-main {
+    display: inline-block;
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
     border: 1px solid hsl(0, 0%, 93%);
     padding: 5px;
     border-radius: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+/* category name */
+.main-container h4 {
+    color: black;
+    margin-bottom: 2px;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+}
+
+/* this is necessary to make the text ellipsis when it overflow */
+h4 {
+    width: 250px;
+}
+
+.shop-now {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    font-size: small;
+    margin: 10px;
+}
+
+.sub-main-img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* .banner{
+      display: inline;
+    position: absolute;
+    margin-left:25px;
+    bottom: -550px;
+    left: 113px;
+    z-index: 1;
   }
-  
-  /* to make the products in 3 grid */
-  .product-minimal {
+  .banner-img{
+      height: 200px;
+      border-radius: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  } */
+
+/*Latest, Bestseller, Rating*/
+.product-box {
+    margin-top: 20px;
+}
+
+/* to arrange all products in line */
+.product-minimal .showcase {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 5px; */
+    border: 1px solid hsl(0, 0%, 93%);
+    /* padding: 5px; */
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+/* to make the products in 3 grid */
+.product-minimal {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-  }
-  
-  /* style for price */
-  .product-minimal .price {
+    margin-left: 41px;
+    margin-right: 41px;
+    text-align: center;
+}
+
+/* style for price */
+.product-minimal .price {
     font-size: 14px;
     font-weight: 700;
     color: cadetblue;
     margin-bottom: 5px;
-  }
-  
-  /* style for title above the products */
-  .title {
+}
+
+/* style for title above the products */
+.title {
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 0.4px;
     padding-bottom: 10px;
     border-bottom: 1px solid hsla(0, 1%, 44%, 0.308);
     margin-bottom: 15px;
-    margin-top: 100px;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  /* product name */
-  .product-minimal .showcase-title {
+    text-align: center;
+}
+
+/* product name */
+.product-minimal .showcase-title {
     color: black;
     margin-bottom: 2px;
     white-space: nowrap;
@@ -288,23 +173,23 @@ button:focus {
     text-overflow: ellipsis;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
-  }
-  
-  /* this is necessary to make the text ellipsis when it overflow */
-  a h4 {
+}
+
+/* this is necessary to make the text ellipsis when it overflow */
+a h4 {
     width: 250px;
-  }
-  
-  .product-showcase a {
+}
+
+.product-showcase a {
     text-decoration: none;
-  }
-  
-  .product-showcase img {
+}
+
+.product-showcase img {
     border-radius: 10px;
-  }
-  
-  /* style for add to cart button generated from a website*/
-  .product-showcase button {
+}
+
+/* style for add to cart button generated from a website*/
+.product-showcase button {
     appearance: none;
     background-color: #FAFBFC;
     border: 1px solid rgba(27, 31, 35, 0.15);
@@ -328,44 +213,45 @@ button:focus {
     vertical-align: middle;
     white-space: nowrap;
     word-wrap: break-word;
-  }
-  
-  .product-showcase button:hover {
+}
+
+.product-showcase button:hover {
     background-color: #F3F4F6;
     text-decoration: none;
     transition-duration: 0.1s;
-  }
-  
-  .product-showcase button:disabled {
+}
+
+.product-showcase button:disabled {
     background-color: #FAFBFC;
     border-color: rgba(27, 31, 35, 0.15);
     color: #959DA5;
     cursor: default;
-  }
-  
-  .product-showcase button:active {
+}
+
+.product-showcase button:active {
     background-color: #EDEFF2;
     box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
     transition: none 0s;
-  }
-  
-  .product-showcase button:focus {
+}
+
+.product-showcase button:focus {
     outline: 1px transparent;
-  }
-  
-  .product-showcase button:before {
+}
+
+.product-showcase button:before {
     display: none;
-  }
-  
-  .product-showcase button:-webkit-details-marker {
+}
+
+.product-showcase button:-webkit-details-marker {
     display: none;
-  }
-  /* style for products image */
-  .product-box img{
+}
+
+/* style for products image */
+.product-box img {
     transition: 0.2s;
     width: 150px;
-  }
-  
-  .product-box img:hover {
+}
+
+.product-box img:hover {
     transform: scale(1.2);
-  }
+}
