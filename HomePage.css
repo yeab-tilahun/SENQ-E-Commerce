@@ -102,20 +102,6 @@ h4 {
     margin-bottom: 8px;
 }
 
-/* .banner{
-      display: inline;
-    position: absolute;
-    margin-left:25px;
-    bottom: -550px;
-    left: 113px;
-    z-index: 1;
-  }
-  .banner-img{
-      height: 200px;
-      border-radius: 10px;
-      margin-top: 40px;
-      margin-bottom: 40px;
-  } */
 
 /*Latest, Bestseller, Rating*/
 .product-box {
@@ -255,3 +241,225 @@ a h4 {
 .product-box img:hover {
     transform: scale(1.2);
 }
+
+/* Trending */
+.trending-label{
+    text-align: center;
+    font-family: futura-pt,FuturaStd,Helvetica,Arial,sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.trending{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.trend-section{
+    background-color: white;
+}
+ /* Back to top button */
+
+ .button-35 {
+   align-items: center;
+   background-color: #A2B38B;
+   box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+   box-sizing: border-box;
+   color: #121212;
+   cursor: pointer;
+   display: inline-flex;
+   flex: 1 1 auto;
+   font-family: Inter,sans-serif;
+   font-size: 1.2rem;
+   font-weight: 700;
+   justify-content: center;
+   line-height: 1;
+   margin: 0;
+   outline: none;
+   padding: 1rem 1.2rem;
+   text-align: center;
+   text-decoration: none;
+   transition: box-shadow .2s,-webkit-box-shadow .2s;
+   white-space: nowrap;
+   border: 0;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   width: 1350px;
+   height: 40px;
+ }
+ .button-35 h6{
+     margin-top: 5px;
+     font-size: 13px;
+ }
+ 
+ .button-35:hover {
+    background-color: #a2b38bb0;
+ }
+
+/* Footer */
+
+footer  a { text-decoration: none; }
+
+footer li { list-style: none; }
+
+
+footer {
+  background: hsl(0, 0%, 13%);
+  padding: 30px 0;
+}
+
+/* holds the whole footer content */
+.footer-nav {
+  border-bottom: 1px solid hsl(0, 0%, 27%);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-nav-list:not(:last-child) { margin-bottom: 20px; }
+
+/* main footer nav style */
+.footer-nav .nav-title {
+  position: relative;
+  color:  hsl(0, 100%, 100%);
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+
+/* underline style under footer nav. (contact, product ...) */
+.footer-nav .nav-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: hsl(152, 51%, 52%);
+  width: 65px;
+  height: 1px;
+}
+
+/* padding between contents under each */
+.footer-nav-item { padding: 5px 0; }
+
+/* all link texts under every coulmn */
+.footer-nav-link, .footer-nav-item .content {
+  color:hsl(0, 0%, 47%);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* every link under footer when hover */
+.footer-nav-link:hover { color: hsl(152, 51%, 52%); }
+
+
+/* under contact */
+.footer-nav-item.flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* address style */
+.footer-nav-item .content {
+  font-style: normal;
+  margin-bottom: 6px;
+}
+
+/* style for icons under address */
+.footer-nav-item .icon-box {
+  color:  hsl(0, 0%, 47%);
+  font-size: 25px;
+}
+
+/* payment option image and copyright style */
+.footer-bottom {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.payment-img {
+  max-width: 335px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.copyright {
+  color: hsl(0, 0%, 47%);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+}
+
+.copyright a {
+  display: inline;
+  color: inherit;
+  margin-bottom: 0px;
+}
+
+.social-links{
+  display: block;
+  text-decoration: none;
+  color:silver;
+  padding: 10px;
+}
+
+/* to allign social icons */
+.socials{
+  text-align: left;
+
+}
+.insta:hover{
+    color:  #cc2366;  
+}
+
+/* label for social media icons */
+.social-links h6{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.footer-bottom { margin-bottom: 0; }
+
+ .footer-nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 20px;
+  align-content: center;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+
+/* @media (max-width: 769px) {
+
+  .container {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  .footer-nav .container {
+    display: flex;
+    flex-flow: wrap;
+    margin: 20px;
+  }
+
+  .footer-nav-list:not(:last-child) { margin-bottom: 0; }
+  .footer-bottom { margin-bottom: 0; }
+  .socials{
+    display: inline;
+    justify-content: center;
+  }
+
+} */
