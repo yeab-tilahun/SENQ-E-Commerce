@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #fbf3f8;
+    background-color: white;
 }
 
 .custom {
@@ -70,7 +70,8 @@ body {
     padding: 5px;
     border-radius: 10px;
     margin-bottom: 10px;
-    background-color: white;
+    /* background-image: linear-gradient(to right top, #9fc088, #8fb68c, #83ab8e, #7c9f8d, #78938a); */
+    background-image: linear-gradient(to right top, #9fc088, #91d1bd, #aadae2, #d4e2ef, #eeeeee);
 }
 
 /* category name */
@@ -118,6 +119,7 @@ h4 {
     /* padding: 5px; */
     border-radius: 10px;
     margin-bottom: 5px;
+    background-color: #DDDDDD;
 }
 
 /* to make the products in 3 grid */
@@ -135,24 +137,31 @@ h4 {
 .product-minimal .price {
     font-size: 14px;
     font-weight: 700;
-    color: cadetblue;
+    color: #005555;
     margin-bottom: 5px;
 }
 
 /* style for title above the products */
 .title {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 0.4px;
     padding-bottom: 10px;
     border-bottom: 1px solid hsla(0, 1%, 44%, 0.308);
     margin-bottom: 15px;
+  
     text-align: center;
+    font-family: futura-pt,FuturaStd,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 /* product name */
 .product-minimal .showcase-title {
     color: black;
+    font-weight: 400;
     margin-bottom: 2px;
     white-space: nowrap;
     overflow: hidden;
@@ -235,7 +244,7 @@ a h4 {
 /* style for products image */
 .product-box img {
     transition: 0.2s;
-    width: 150px;
+    width: 100px;
 }
 
 .product-box img:hover {
