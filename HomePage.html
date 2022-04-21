@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light ml-auto topnav" id="top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light ml-auto topnav" id="top">
         <section class="container-fluid">
             <img src="Images/senqlogo.png" alt="NoImage" class="logo"><a class="navbar-brand " href="#">
                 <!-- <h1> <b>SENQ</b></h1> -->
@@ -63,46 +63,22 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item  icon-pad">
                         <a class="nav-link active" aria-current="page" href="#"><i
-                                class="fa-solid fa-circle-user fa-2x"></i> </a>
+                                class="fa-solid fa-circle-user fa-2x" id="icon"></i> </a>
                     </li>
                     <li class="nav-item icon-pad">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-arrow-down fa-2x" id="icon2"></i></a>
                     </li>
                     <li class="nav-item  icon-pad">
-                        <a class="nav-link" href="#"> <i class="fa-solid fa-heart fa-2x"></i></a>
+                        <a class="nav-link" href="#"> <i class="fa-solid fa-heart fa-2x" id="icon3"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i></a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-2x last-icon" id="icon4"></i></a>
                     </li>
                 </ul>
             </section>
         </section>
     </nav>
 
-
-    <!-- <section class="button_cat">
-
-
-        <ul class="nav nav-pills nav-justified">
-            <li class="nav-item">
-                <button type="button" class="btn custom btn-sm">Category</button>
-            </li>
-            <li class="nav-item">
-                <button type="button" class="btn custom btn-sm">Products</button>
-            </li>
-            <li class="nav-item">
-                <button type="button" class="btn  custom btn-sm">My cart <i
-                        class="fa-solid fa-cart-arrow-down"></i></button>
-            </li>
-            <li class="nav-item">
-                <form action="" style="display: -ms-inline-flexbox;">
-                    <input type="search" placeholder="Search" class="" aria-label="Search">
-                    <button type="button" class="btn btn-warning btn-sm">Search</button>
-                </form>
-            </li>
-        </ul>
-
-    </section> -->
 
     <!-- first page with the lady -->
     <!-- To make it auto play chnage data-bs--ride in to carousel -->
@@ -193,6 +169,11 @@
         </section>
     </section>
 
+    <section class="features">
+        <img src="Images/Service 01.png" alt="">
+        <img src="Images/Service 02.png" alt="">
+        <img src="Images/Service 03.png" alt="">
+    </section>
     <!-- Latest, Bestseller, Rating -->
     <section class="product-box">
 
@@ -509,7 +490,7 @@
     </section>
 
     <!-- Back to top button -->
-    <a href="#top" class="back-to-top-link"><button class="button-35" role="button"><h6>Back to top</h6></button></button></a>
+    <a href="#" class="back-to-top-link"><button class="button-35" role="button"><h6>Back to top</h6></button></button></a>
 
     <!-- Footer section -->
 

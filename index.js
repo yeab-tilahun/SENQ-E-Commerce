@@ -1,4 +1,5 @@
 
+// to change the width of the combo box accordingly
 function validate()
 {
  var drop_down = document.getElementById("cat-for-search");
@@ -37,3 +38,32 @@ function validate()
    
 }
 validate()
+
+// for top nav to minimize size when scroll
+const nav = document.querySelector('#top');
+const icon =  document.getElementById('icon');
+const icon2 =  document.getElementById('icon2');
+const icon3  =  document.getElementById('icon3');
+const icon4 =  document.getElementById('icon4');
+
+
+let navTop = nav.offsetTop;
+
+function fixedNav() {
+  if (window.scrollY > navTop) {    
+    nav.classList.add('fixed');  
+    icon.classList.remove('fa-2x');    
+    icon2.classList.remove('fa-2x');    
+    icon3.classList.remove('fa-2x');    
+    icon4.classList.remove('fa-2x');     
+  } 
+  else {
+    nav.classList.remove('fixed');    
+    icon.classList.add('fa-2x');    
+    icon2.classList.add('fa-2x');    
+    icon3.classList.add('fa-2x');    
+    icon4.classList.add('fa-2x'); 
+  }
+}
+
+window.addEventListener('scroll', fixedNav);
