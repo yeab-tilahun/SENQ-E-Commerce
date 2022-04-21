@@ -76,9 +76,6 @@ body {
     line-height: 25px;
     font-size: 14px;
     font-weight: 500;
-    font-family: inherit;
-
-    color: #99A3BA;
     border: px solid #CDD9ED;
     background: #fff;
     transition: border .3s ease;
@@ -98,12 +95,12 @@ body {
   width: 50px;
   height: 40px;
   background-color: #A2B38B;
-  border: 1px solid black;
+  border: 1px solid  #A2B38B;;
   left: 490px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  /* bottom: 1px; */
 }
+
 /* image???????????????????????????????????? */
 .img-rounded {
     border-radius: 15px;
