@@ -8,6 +8,26 @@ body {
     background-color: white;
 }
 
+/* nav bar */
+.logo{
+  width: 60px;
+}
+.icon-pad{
+  padding-right: 20px;
+}
+.last-icon{
+  padding-right: 0px;
+}
+
+.topnav{
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+
+/* to be removed */
 .custom {
     background-color: #a59c9b;
     outline-color: #a59c9b;
@@ -25,8 +45,8 @@ body {
 
 .button_cat {
     background-color: #dfd3d1;
-    padding-left: 25px;
-    padding-right: 25px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 5px;
@@ -35,6 +55,56 @@ body {
     border-radius: 12px;
 }
 
+
+
+/* search with category */
+.search-with-cat{
+  margin-left: 200px;
+}
+.combo-box{
+  position: relative;
+  height: 40px;
+  left: 5px;
+  background-color: #A2B38B;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.search-box{
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+
+    color: #99A3BA;
+    border: px solid #CDD9ED;
+    background: #fff;
+    transition: border .3s ease;
+    text-indent: 10px;
+}
+.search-box::placeholder {
+      color: #CBD1DC;
+      padding-left: 10px;
+  }
+.search-box,.combo-box:focus {
+      outline: none;
+      border-color: #E4E9BE;
+  }
+
+.search-btn{
+  position: relative;
+  width: 50px;
+  height: 40px;
+  background-color: #A2B38B;
+  border: 1px solid black;
+  left: 490px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  /* bottom: 1px; */
+}
+/* image???????????????????????????????????? */
 .img-rounded {
     border-radius: 15px;
 }
@@ -168,6 +238,8 @@ h4 {
     text-overflow: ellipsis;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-left: 7px;
 }
 
 /* this is necessary to make the text ellipsis when it overflow */
@@ -272,7 +344,9 @@ a h4 {
     background-color: white;
 }
  /* Back to top button */
-
+.back-to-top-link{
+  text-decoration: none;
+}
  .button-35 {
    align-items: center;
    background-color: #A2B38B;

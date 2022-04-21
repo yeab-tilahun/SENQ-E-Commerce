@@ -33,10 +33,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light ml-auto topnav">
+    <nav class="navbar navbar-expand-lg navbar-light ml-auto topnav" id="top">
         <section class="container-fluid">
-            <img src="Images/senqlogo.png" alt="NoImage"><a class="navbar-brand" href="#">
-                <h1> <b>SENQ</b></h1>
+            <img src="Images/senqlogo.png" alt="NoImage" class="logo"><a class="navbar-brand " href="#">
+                <!-- <h1> <b>SENQ</b></h1> -->
                  <!-- <img src="Images/senqText.png" alt="NoImage" width="150px"></a> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -44,29 +44,44 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             </button>
-            <section class="collapse navbar-collapse" id="navbarNav">
+            
+        
+    <section class="search-with-cat">
+        <select onchange="validate()" name="category" id="cat-for-search" class="combo-box">
+            <option value="All">All</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Cosmetics">Cosmetics</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Foods">Foods</option>
+        </select>
+        <input type="text" name="search-field" id="" class="search-box" placeholder="Search for products">
+        <button id="search-go" class="search-btn"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+    </section>
+
+            <section class="collapse navbar-collapse icons" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                    <li class="nav-item  icon-pad">
                         <a class="nav-link active" aria-current="page" href="#"><i
-                                class="fa-solid fa-circle-user fa-2xl"></i> USER NAME</a>
+                                class="fa-solid fa-circle-user fa-2x"></i> </a>
+                    </li>
+                    <li class="nav-item icon-pad">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-arrow-down fa-2x"></i></a>
+                    </li>
+                    <li class="nav-item  icon-pad">
+                        <a class="nav-link" href="#"> <i class="fa-solid fa-heart fa-2x"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">MY ACCOUNT</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">LOGOUT &nbsp;<i
-                                class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li> -->
                 </ul>
             </section>
         </section>
     </nav>
 
 
-    <section class="button_cat">
+    <!-- <section class="button_cat">
+
 
         <ul class="nav nav-pills nav-justified">
             <li class="nav-item">
@@ -87,7 +102,7 @@
             </li>
         </ul>
 
-    </section>
+    </section> -->
 
     <!-- first page with the lady -->
     <!-- To make it auto play chnage data-bs--ride in to carousel -->
@@ -494,7 +509,7 @@
     </section>
 
     <!-- Back to top button -->
-    <button class="button-35" role="button"><h6>Back to top</h6></button>
+    <a href="#top" class="back-to-top-link"><button class="button-35" role="button"><h6>Back to top</h6></button></button></a>
 
     <!-- Footer section -->
 
@@ -671,3 +686,4 @@
 </body>
 
 </html>
+<script src="index.js"></script>
