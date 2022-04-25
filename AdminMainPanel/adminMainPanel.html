@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Main Panel</title>
+    <link rel="stylesheet" href="adminMainPanel.css" />
+  </head>
+
+  <script>        // Display the actual time and date
+    var dt = new Date();
+    document.getElementById('time').innerHTML=dt;
+    </script>
+
+
+  <body>
+    <section class="topBar">
+      <div class="dropDown">
+        <section class="dropDownBtn"></section>
+        <div>
+          <a class="dropDownItem" id="settings" href="#">Settings</a>
+          <section class="dropDownItem" id="darkModeToggleDiv">
+            Dark mode
+          </section>
+          <a class="dropDownItem" id="aboutUs" href="#">About Us Page</a>
+        </div>
+      </div>
+      <div id="admin"><button class="admin" href="#">Admin</button></div>
+      <div id="timeAndDate">
+        <span id="time"></span>
+        <span id="date">Sep 11, 2001</span>
+      </div>
+    </section>
+    <section class="sideBar">
+      <div class="sideBarTop">
+        <span><br>SENQ</span>
+      </div>
+      <div class="sideBarBottom">
+        <a href="#" class="sideMenuItem" id="homePage">
+          <span>Home</span>
+        </a>
+        <a href="#" class="sideMenuItem" id="add">
+          <span>Add Product</span>
+        </a>
+        <a href="#" class="sideMenuItem" id="stock">
+          <span>Update Stock</span>
+        </a>
+        <a href="#" class="sideMenuItem" id="remove">
+          <span>Remove</span>
+        </a>
+        <a href="#" class="sideMenuItem" id="update">
+          <span>Price Update</span>
+        </a>
+        <a href="#" class="sideMenuItem" id="tran">
+          <span>Transactions</span>
+        </a>
+        <a href="#" class="sideMenuItem" id="analytics">
+          <span>Analytics</span>
+        </a>
+        <a href="#" class="sideMenuItem" id="logOut">
+          <span>Log Out</span>
+        </a>
+      </div>
+    </section>
+    <section class="mainPanel">
+      <div class="crescent"></div>
+    </section>
+  </body>
+</html>
