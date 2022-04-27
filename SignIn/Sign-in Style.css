@@ -175,7 +175,7 @@ html,body{
 }
 .container .button input[type="submit"]:hover{
     letter-spacing: 1px;
-    background: linear-gradient(to left, #ef9b1c 0%, #fdc012 100%);
+    background: linear-gradient(to left, #ef9b1c 0%, #ef9b1c 100%);
   }
 
   .container .link{
