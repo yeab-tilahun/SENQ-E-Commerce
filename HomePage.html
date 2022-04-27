@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light ml-auto topnav" id="top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light ml-auto topnav"  id="top">
         <section class="container-fluid">
             <img src="Images/senqlogo.png" alt="NoImage" class="logo"><a class="navbar-brand " href="#">
                 <!-- <h1> <b>SENQ</b></h1> -->
@@ -45,19 +45,6 @@
             </button>
             </button>
             
-        
-    <section class="search-with-cat">
-        <select onchange="validate()" name="category" id="cat-for-search" class="combo-box">
-            <option value="All">All</option>
-            <option value="Electronics">Electronics</option>
-            <option value="Furniture">Furniture</option>
-            <option value="Cosmetics">Cosmetics</option>
-            <option value="Clothes">Clothes</option>
-            <option value="Foods">Foods</option>
-        </select>
-        <input type="text" name="search-field" id="" class="search-box" placeholder="Search for products">
-        <button id="search-go" class="search-btn"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-    </section>
 
             <section class="collapse navbar-collapse icons" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -79,6 +66,19 @@
         </section>
     </nav>
 
+        <!-- search with category -->
+    <section class="search-with-cat" id="topC">
+        <select onchange="validate()" name="category" id="cat-for-search" class="combo-box">
+            <option value="All">All</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Cosmetics">Cosmetics</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Foods">Foods</option>
+        </select>
+        <input type="text" name="search-field" id="" class="search-box" placeholder="Search for products">
+        <button id="search-go" class="search-btn"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+    </section>
 
     <!-- first page with the lady -->
     <!-- To make it auto play chnage data-bs--ride in to carousel -->

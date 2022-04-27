@@ -9,6 +9,9 @@ body {
 }
 
 /* nav bar */
+nav{
+  position: relative;
+}
 .logo{
   width: 60px;
   margin-left: 37px;
@@ -26,6 +29,7 @@ body {
   margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
+  position: relative;
 }
 
 /* icon color */
@@ -36,6 +40,12 @@ body {
 /* search with category */
 .search-with-cat{
   margin-left: 200px;
+  /* margin-top: 55px; */
+  position: relative;
+  z-index: 9999;
+  bottom: 45px;
+  left: 100px;
+
 }
 .combo-box{
   position: relative;
@@ -75,6 +85,7 @@ body {
   left: 490px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  bottom: 1px;
 }
 
 /* image???????????????????????????????????? */
@@ -528,6 +539,14 @@ footer {
 
 
 /* nav bar when scroll js adds fixed class to the nav*/
+#top.fixed .search-with-cat{
+  margin-left: 200px;
+  /* margin-top: 55px; */
+  position: relative;
+  z-index: 9999;
+  bottom: 45px;
+  left: 100px;
+}
 #top.fixed {
   position: fixed;
   box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
@@ -574,4 +593,31 @@ top: 54px;
 
 .feature-img{
 
+}
+
+@media(max-width: 769px){
+  
+  /* search with category */
+  .search-with-cat{
+    margin-right: 0px;
+    z-index: 9999;
+    top: 45px;
+    margin-bottom: 45px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .combo-box{
+    right: 200px;
+  }
+  .search-box{
+      width: 250px;
+  }
+  
+  .search-btn{
+    left: 250px;
+    bottom: 1px;
+  }
+  
+  
 }
