@@ -48,6 +48,10 @@ html,body{
     padding-bottom: 50px;
 }
 
+.forgot{
+    margin-left: 20px;
+}
+
 .container form .title{
     font-size: 30px;
     font-weight: 600;
