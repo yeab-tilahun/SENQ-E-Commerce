@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
-    <link rel="stylesheet" href="Create Account.css">
+    <link rel="stylesheet" href="../SignUp/Create Account.css">
+    <script src="Create Account.js" defer></script>
 </head>
 <body>
     <section class="container">
         <form action="#">
             <h2 class="title">Create Account</h2>
             
-            <aside class="pic">
-                <input type="file" placeholder="Photo" required capture>
-            </aside>
+            <div><p><br><br><br></p></div>  <!-- To create space between the h2 and the img-->
+            
+         <div class="pic">
+             <img src="../Images/Profile.jpg" id="photo">
+             <input type="file" id="file">
+             <label for="file" id="uploadBtn"><img src="../Images/addImg.png"></label>
+         </div>
 
             <article class="fname"> <!-- FirstName -->
                 <input type="text" placeholder="First Name" required>
@@ -42,7 +47,7 @@
             </article>
 
             <article class="link">
-                <p>Have an account? <a href="Sign-in.html">Sign-In</a></p><br>
+                <p>Have an account? <a href="../SignIn/Sign-in.html">Sign-In</a></p><br>
 
             </article>
 
