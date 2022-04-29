@@ -20,12 +20,24 @@ html,body{
 
 .container{
     background: white;
-    max-width: 350px;
+    max-width: 800px;
     width: 100%;
-    padding: 25px 30px;
+    padding: 25px 30px ;
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 }
+
+.advert{
+    margin-top: 50px;
+    width: 320px;
+    height: 600px;
+    float: right;
+}
+
+.signup{
+    float: left;
+}
+
 
 .container form .title{
     font-size: 30px;
@@ -92,14 +104,14 @@ html,body{
     border: none;
 }
 
-.container form .underline::before{
+/* .container form .underline::before{
     content: '';
     position: absolute;
     height: 2px;
     width: 100%;
     background: #ccc;
     left: 0;
-}
+} */
 
 /* .container form .underline::after{
     content: '';
@@ -239,9 +251,9 @@ html,body{
   }
 
 
-img{
+/* img{
     height: 100px;
-}
+} */
 
 .pic{
     width: 140px;
@@ -252,7 +264,7 @@ img{
     transform: translate(-50%,-50%);
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid grey;
+    border: 2px solid #284f87;
 
 }
 
