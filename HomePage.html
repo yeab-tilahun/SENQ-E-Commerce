@@ -162,18 +162,23 @@
         </section>
         <section class="sub-main">
             <h4>For your Fitness Needs</h4>
-            <img src="Images/For your Fitness Needs.jpg" alt="category-image" class="sub-main-img" width="265"
-                height="200">
+            <img src="Images/For your Fitness Needs.jpg" alt="category-image" class="sub-main-img" width="265" height="200">
             <a class="shop-now" href="">Shop now</a>
 
         </section>
     </section>
 
     <section class="features">
-        <img src="Images/Service 01.png" alt="">
-        <img src="Images/Service 02.png" alt="">
-        <img src="Images/Service 03.png" alt="">
+        <img src="Images/Service 01.png" alt=""  id="feature">
+        <img src="Images/Service 02.png" alt=""  id="feature">
+        <img src="Images/Service 03.png" alt=""  id="feature">
     </section>
+
+    <script type="text/javascript">
+        let image= document.getElementById('feature');
+        image.background=line
+    </script>
+
     <!-- Latest, Bestseller, Rating -->
     <section class="product-box">
 
@@ -482,12 +487,62 @@
             <h2>Trending Brands</h2>
         </section>
         <section class="trending">
-            <img src="Images/tommy.jpg" class="trending-brnads" alt="" width="256">
+            <div class="slide fade">
+            <img src="Images/tommy.jpg" class="trending-brnads" alt="" width="256" >
+        </div>
+            <div class="slide fade">
             <img src="Images/nike.jpg" class="trending-brnads" alt="" width="256">
+        </div>
+            <div class="slide fade">
             <img src="Images/mac.png" class="trending-brnads" alt="" width="256" height="256">
+        </div>
+            <div class="slide fade">
             <img src="Images/samsung.png" class="trending-brnads" alt="" width="256" height="256">
+        </div>
+
+        <!-- <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div> -->
+          
         </section>
     </section>
+
+    <script>
+
+        let slideIndex = 0;
+        showSlides();
+        // $(function(){
+        //     $(window).resize(function(){
+        //         if($(this).width()<=300){
+                    
+                    function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("slide");
+        //   let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex >= slides.length) {slideIndex =1}    
+        //   for (i = 0; i < dots.length; i++) {
+        //     dots[i].className = dots[i].className.replace(" actives", "");
+        //   }
+          slides[slideIndex].style.display = "block";  
+        //   dots[slideIndex].className += " actives";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        //         }
+        //     });
+        // });
+
+       
+
+    </script>
+
+   
 
     <!-- Back to top button -->
     <a href="#" class="back-to-top-link"><button class="button-35" role="button"><h6>Back to top</h6></button></button></a>
