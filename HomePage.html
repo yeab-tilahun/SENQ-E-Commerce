@@ -35,18 +35,41 @@
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light ml-auto topnav"  id="top">
         <section class="container-fluid">
-            <img src="Images/senqlogo.png" alt="NoImage" class="logo"><a class="navbar-brand " href="#">
+            <img src="Images/senqlogo.png" alt="NoImage" class="logo">
+            <!-- <a class="navbar-brand " href="#"> -->
                 <!-- <h1> <b>SENQ</b></h1> -->
                  <!-- <img src="Images/senqText.png" alt="NoImage" width="150px"></a> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <!-- </a> -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+            </button> -->
             </button>
-            </button>
+
+            <div class="topnav" id="myTopnav">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-circle-user fa-2x" id="icon1"></i></a>
+                <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-arrow-down fa-2x" id="icon2"></i></a>
+                <a class="nav-link" href="#"> <i class="fa-solid fa-heart fa-2x" id="icon3"></i></a>
+                <a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-2x last-icon" id="icon4"></i></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+
+              <script>
+                  function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                     }
+                } 
+              </script>
+
             
 
-            <section class="collapse navbar-collapse icons" id="navbarNav">
+            <!-- <section class="collapse navbar-collapse icons" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item  icon-pad">
                         <a class="nav-link active" aria-current="page" href="#"><i
@@ -62,7 +85,8 @@
                         <a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-2x last-icon" id="icon4"></i></a>
                     </li>
                 </ul>
-            </section>
+            </section> -->
+            
         </section>
     </nav>
 
