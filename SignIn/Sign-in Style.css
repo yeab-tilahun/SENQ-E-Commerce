@@ -14,9 +14,9 @@ html,body{
     background: linear-gradient(to right,#88ecd1 0%, #f7e9ae 150%);
     overflow-x: hidden;}
 
-::selection{
+/* ::selection{
     background: #ff80bf;
-}
+} */
 
 .container{
     display: flex;
@@ -187,4 +187,167 @@ html,body{
     text-align: center;
     font-size: 12px;
    
+}
+
+/*******************************************************************************************************************************************************************/
+@media(min-width:320px){
+      
+    .advert{
+        display: none;
+    }
+    .signform{
+        float: left;
+        margin-left: 8vw;
+        margin-top: 80px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: white;
+        max-width: 80vw;
+        width: 100%;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+        /* grid-template-areas: one one one
+                             two two two; */
+    }
+
+    .keep{
+        font-size: 14px;
+        padding-left: 4vw;
+        padding-bottom: 50px;
+    }
+}
+/******************************************************************************************************************************************/
+/* @media(min-width:789px){ */
+    /* .advert{
+        display: inline-block;
+        margin-left: 4vw;
+        width: 28vw;
+        height: 500px;
+    }
+
+    .keep{
+        font-size: 14px;
+        padding-left: 2vw;
+        padding-bottom: 50px;
+    } */
+/* } */
+
+@media(min-width:769px){
+    .advert{
+        display: block;
+        margin-left: 7vw;
+        width: 30vw;
+        height: 500px;
+        float: right;
+        overflow-y: hidden;
+    }
+
+    .signform{
+        float: left;
+        margin-left: 5vw;
+        margin-top: 80px;
+        width: 30vw;
+    }
+
+    .keep{
+        font-size: 1.5vw;
+        padding-left: 1vw;
+        padding-bottom: 50px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: white;
+        max-width: 80vw;
+        width: 100%;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+
+    }
+}
+
+
+/******************************************************************************************************************************************/
+
+@media(min-width:920px){
+    .advert{
+        display: block;
+        margin-left: 5vw;
+        width: 20vw;
+        height: 500px;
+        float: right;
+    }
+
+    .signform{
+        float: left;
+        margin-left: 6vw;
+        margin-top: 80px;
+        width: 30vw;
+    }
+
+    .keep{
+        font-size: 14px;
+        padding-left: 1vw;
+        padding-bottom: 50px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: white;
+        max-width: 70vw;
+        width: 100%;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+
+    }
+
+}
+
+/******************************************************************************************************************************************/
+
+@media(min-width:1300px){
+    .advert{
+        display: block;
+        margin-left: 5vw;
+        width: 25vw;
+        height: 500px;
+        float: right;
+    }
+
+    .signform{
+        float: left;
+        margin-left: 6vw;
+        margin-top: 80px;
+        width: 25vw;
+    }
+
+    .keep{
+        font-size: 14px;
+        padding-left: 1vw;
+        padding-bottom: 50px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: white;
+        max-width: 70vw;
+        width: 100%;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+
+    }
+
 }
