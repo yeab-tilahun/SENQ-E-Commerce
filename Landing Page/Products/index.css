@@ -2,6 +2,7 @@
     box-sizing: border-box;
     /* overflow-x: hidden; */
 }
+
 .wrapper {
     width: 68em;
 }
@@ -133,7 +134,6 @@ body {
 .product-grid__view:hover {
     background: #fff;
 }
-
 /*********************************************************************************************************/
 
 @media(min-width:320px){
@@ -255,5 +255,8 @@ body {
     .product-grid__product:hover {
         box-shadow: 0px 0px 0px 1px #eee;
         z-index: 500;
+    }
+    img{
+        width: 50px
     }
 }

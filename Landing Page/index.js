@@ -138,5 +138,4 @@ function showSlides() {
     });
   
   },1000);
- 
 
