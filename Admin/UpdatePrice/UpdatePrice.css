@@ -1,0 +1,271 @@
+.updatePrice * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.updatePrice {
+    display: block;
+    background-color: rgb(231, 216, 216, 0.6);
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 5px 20px 3px rgb(87, 69, 69);
+    position: absolute;/*very Important*/
+    overflow: hidden;
+    margin: 0;
+    margin-left: 5%;/* must remove*/
+    margin-top: 1%;
+    padding: 0;
+    box-sizing: border-box;
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+}
+.updatePrice::-webkit-scrollbar{
+    width: 0px;
+}
+
+.updatePrice .updatePriceTopArea {
+    width: 100%;
+    height: 15%;
+    padding-left: 20%;
+}
+
+
+.updatePriceTopArea table{
+    margin-top: 2.5%;
+    border-collapse: collapse;
+    width: 350px;
+}
+
+.updatePriceTopArea table .searchInput {
+    width: 250px;
+    height: 43px;
+    font-size: larger;
+    padding: 1.5%;
+    border: none;
+    background-color: rgb(186, 183, 199);
+    box-shadow: 2px 2px solid rgb(161, 139, 139);
+    border-radius: 12px;
+    transition: 0.15s;
+}
+.searchInput:hover{
+    transform: scale(1.05);
+    background-color: rgb(158, 180, 180);
+}
+.updatePriceTopArea table .searchButton {
+    width: 50px;
+    height: 43px;
+    background-color: rgb(87, 87, 201);
+    background-image: url(../icons/search.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    border: none;
+    box-shadow: 4px 4px 6px rgb(149, 91, 226);
+    border-radius: 15px;
+    background-position: center;
+    transition: 0.15s;
+}
+.searchButton:hover{
+    transform: scale(1.05);
+    background-color: rgb(73, 73, 184);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.updatePrice .updatePriceMiddleArea {
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+}
+
+.updatePriceMiddleArea .productListTable {
+    border-collapse: collapse;
+    box-shadow: 0px 5px 10px rgb(111, 113, 116);
+    text-align: left;
+    width: 95%;
+    height: 90%;
+    margin-left: 2.5%;
+    display: block;
+    overflow: scroll;
+}
+.productListTable td, .productListTable th{
+    width: 10%;
+}
+.productListTable::-webkit-scrollbar{
+    width: 0px;
+}
+.productListTable thead{
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    background-color: rgb(117, 103, 245);
+    color: white;
+    border: none;
+    letter-spacing: 0.05em;
+    height: 35px;
+}
+.productListTable thead th{
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.productListTable tbody::-webkit-scrollbar{
+    width: 0px;
+}
+.productListTable td{
+    padding-left: 20px;
+    letter-spacing: 0.05em;
+    height: 40px;
+    font-size: 1.6em;
+    overflow: hidden;
+}
+
+.productListTable tbody tr:nth-child(even){
+    background-color: rgb(182, 224, 235);
+}
+.productListTable tbody tr:nth-child(odd){
+    background-color: rgb(146, 186, 196);
+}
+
+.productListTable tbody tr{
+    transition: 0.15s;
+}
+
+.productListTable tbody tr:hover{
+    transform: scale(1.01);
+    background-color: rgb(78, 96, 176);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.updatePrice .updatePriceBottomArea {
+    position: relative;
+    width: 100%;
+    height: 35%;
+}
+
+
+.updatePriceBottomArea .updatePriceBottomAreaLeft {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 1%;
+}
+.updatePriceBottomAreaLeft table{
+    margin-left: 10%;
+    width: 90%;
+    height: 75%;
+    padding: 1%;
+}
+.updatePriceBottomAreaLeft table td{
+    overflow: hidden;
+    font-size: 1.2em;
+}
+.updatePriceBottomAreaLeft table td input{
+    width: 70%;
+}
+
+.updatePriceBottomAreaLeft table td:nth-of-type(2n+1){
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.updatePriceBottomAreaLeft table td:nth-of-type(2n){
+    text-align: left;
+} 
+.updatePriceBottomAreaLeft input{
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(215, 229, 230);
+    box-shadow: 3px 3px 10px rgb(37, 55, 56);
+    padding: 2px;
+    margin-left: 2%;
+}
+
+
+
+.updatePriceBottomArea .updatePriceBottomAreaRight{
+    position: relative;
+    float: left;
+    height: 100%;  
+    width: 50%;
+}
+
+
+
+.updatePriceBottomAreaRight input{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 25%;  
+    width: 25%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(187, 201, 202);
+    box-shadow: 3px 3px 5px rgb(185, 195, 196);
+    font-size: 1.4em;
+    padding: 3px;
+}
+ label[for=newPrice]{
+     position: absolute; 
+     top: 25%;
+     left: 8%;
+     font-size: 1.6em;
+     font-weight: bold;
+ }
+
+.updatePriceBottomAreaRight #updateButton{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    height: 25%;  
+    width: 20%; 
+    background-image: url(../icons/update.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center left 3px;
+    color: white;
+    font-size: 1.2em;
+    text-align: end;
+    font-weight: 550;
+    padding-right: 2%;
+    border: none;
+    border-radius: 7px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(174, 164, 185);
+    box-shadow: 2px 2px 5px rgb(175, 151, 151);
+    transition: 0.15s;
+}
+
+#updateButton:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 10px 10px rgb(175, 151, 151);
+    background-color: rgb(75, 75, 189);
+}
