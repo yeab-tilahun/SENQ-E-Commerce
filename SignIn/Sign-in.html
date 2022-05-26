@@ -25,8 +25,9 @@
               
               <article class="username-box">
                   <!-- <label for="Username">Username</label> -->
-                  <input type="text" id="Username" name="username" placeholder="Username" required>
+                  <input type="text" id="Username" name="username" placeholder="Username"  required>
                   <article class="underline"></article>
+                  <!-- value="<?php if(isset($_COOKIE['username'])) { echo $_COOKIE['username'];}?>" -->
               </article>
 
               <article class="password-box">
@@ -40,14 +41,15 @@
               </article>
 
               <article class="keep">
-                <input type="checkbox" name="keeplog">
+                <input type="checkbox" name="keeplog" value="check">
+                <!-- <?php if(isset($_COOKIE[username])) {?>  <?php }?> -->
                 <label for="name">Remember Me</label>
                 <a href="#" class="forgot">Forgot Password?</a>
 
               </article>
 
               <article class="link">
-            <p>Don't have an account? <a href="../SignUp/Create Account.html">Create one</a></p><br>
+            <p>Don't have an account? <a href="../SignUp/Create Account.php">Create one</a></p><br>
               </article>
               <article class="trade">
                 <p>Senq Marketplace &trade;</p>
