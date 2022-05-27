@@ -1,0 +1,269 @@
+.removeProd * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.removeProd {
+    display: block;
+    background-color: rgb(231, 216, 216, 0.6);
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 5px 20px 3px rgb(87, 69, 69);
+    position: absolute;/*very Important*/
+    overflow: auto;
+    margin: 0;
+    margin-left: 5%;/* must remove*/
+    margin-top: 1%;
+    padding: 0;
+    box-sizing: border-box;
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+}
+
+.removeProd .removeProdTopArea {
+    width: 100%;
+    height: 12%;
+    padding-left: 20%;
+}
+
+
+.removeProdTopArea table{
+    margin-top: 3%;
+    border-collapse: collapse;
+    width: 350px;
+}
+
+
+.removeProdTopArea table .searchInput {
+    width: 250px;
+    height: 43px;
+    font-size: larger;
+    padding: 1.5%;
+    border: none;
+    background-color: rgb(186, 183, 199);
+    box-shadow: 2px 2px solid rgb(161, 139, 139);
+    border-radius: 12px;
+    transition: 0.15s;
+}
+.searchInput:hover{
+    transform: scale(1.05);
+    background-color: rgb(158, 180, 180);
+}
+.removeProdTopArea table .searchButton {
+    width: 50px;
+    height: 43px;
+    background-color: rgb(87, 87, 201);
+    background-image: url(../icons/search.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    border: none;
+    box-shadow: 4px 4px 6px rgb(149, 91, 226);
+    border-radius: 15px;
+    background-position: center;
+    transition: 0.15s;
+}
+.searchButton:hover{
+    transform: scale(1.05);
+    background-color: rgb(73, 73, 184);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.removeProd .removeProdMiddleArea {
+    overflow: auto;
+    width: 100%;
+    height: 50%;
+}
+
+.removeProdMiddleArea .productListTable {
+    border-collapse: collapse;
+    box-shadow: 0px 5px 10px rgb(111, 113, 116);
+    text-align: left;
+    width: 95%;
+    height: 90%;
+    margin-left: 2.5%;
+    display: block;
+    overflow: scroll;
+}
+.productListTable td, .productListTable th{
+    width: 10%;
+}
+.productListTable::-webkit-scrollbar{
+    width: 0px;
+}
+.productListTable thead{
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    background-color: rgb(117, 103, 245);
+    color: white;
+    border: none;
+    letter-spacing: 0.05em;
+    height: 35px;
+}
+.productListTable thead th{
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.productListTable tbody::-webkit-scrollbar{
+    width: 0px;
+}
+.productListTable td{
+    padding-left: 20px;
+    letter-spacing: 0.05em;
+    height: 40px;
+    font-size: 1.6em;
+    overflow: hidden;
+}
+
+.productListTable tbody tr:nth-child(even){
+    background-color: rgb(182, 224, 235);
+}
+.productListTable tbody tr:nth-child(odd){
+    background-color: rgb(146, 186, 196);
+}
+
+.productListTable tbody tr{
+    transition: 0.15s;
+}
+
+.productListTable tbody tr:hover{
+    transform: scale(1.01);
+    background-color: rgb(78, 96, 176);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.removeProd .removeProdBottomArea {
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+.removeProdBottomArea .removeProdBottomAreaLeft {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.removeProdBottomAreaLeft table{
+    margin-left: 10%;
+    width: 90%;
+    height: 60%;
+    padding: 1%;
+}
+
+.removeProdBottomAreaLeft table td{
+    overflow: hidden;
+    font-size: 1.3em;
+}
+.removeProdBottomAreaLeft table td:nth-of-type(2n+1){
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.removeProdBottomAreaLeft table td input{
+    width: 70%;
+}
+
+.removeProdBottomAreaLeft table td:nth-of-type(2n){
+    text-align: left;
+}
+.removeProdBottomAreaLeft table input{
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(215, 229, 230);
+    box-shadow: 3px 3px 10px rgb(37, 55, 56);
+    padding: 2px;
+    margin-left: 2%;
+}
+
+.removeProdBottomArea .removeProdBottomAreaRight {
+    height: 100%;
+    width: 50%;
+    float: right;
+    position: relative;
+}
+
+
+.removeProdBottomAreaRight #removeButton {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 25%;
+    height: 40%;
+    background-image: url(../icons/remove.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center left 5px;
+    color: white;
+    font-size: 1.2em;
+    text-align: end;
+    font-weight: 550;
+    padding-right: 2%;
+    border: none;
+    border-radius: 7px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(207, 59, 59);
+    box-shadow: 2px 2px 5px rgb(175, 151, 151);
+    transition: 0.15s;
+}
+
+#removeButton:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 10px 10px rgb(175, 151, 151);
+    background-color: rgb(238, 10, 10);
+}

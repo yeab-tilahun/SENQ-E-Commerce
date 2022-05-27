@@ -1,0 +1,515 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+}
+
+#ShowWhenWindowISTooSmall{
+  display: none;
+}
+
+.mainPanel {
+  position: relative;
+  float: right;
+  /*might be problematic*/
+  width: 85%;
+  height: 90%;
+  background-size: cover;
+  border: 4px solid transparent; /* maybe deleted*/
+}
+.mainPanel #bgVideo{
+  position: relative;
+  z-index: -1 ;
+  width: 100%; 
+  height: 100%; 
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.mainPanel iframe{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.mainPanel .mainMenu {
+  margin-top: 2.5%;
+  margin-left: 7.5%;
+  background-color: rgb(231, 216, 216, 0.6);
+  backdrop-filter: blur(3px);
+  box-shadow: 10px 5px 20px 3px rgb(87, 69, 69);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: grid;
+  border-radius: 20px;
+  padding: 2%;
+  width: 85%;
+  height: 90%;
+  overflow: scroll;
+  column-gap: 1%;
+  row-gap: 40px;
+  grid-template-areas:
+    "addProd UpdateStock removeProd"
+    "updateProd ViewTran ViewAnalytics";
+}
+.mainMenu::-webkit-scrollbar{
+  width: 0px;
+}
+.menuItem {
+  text-decoration: none;
+  display: block;
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 2px 10px 10px rgb(185, 171, 171);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center 7px;
+  color: black;
+  transition: 0.2s;
+}
+
+.menuItem:nth-child(2n+1) {
+  background-color: rgb(214, 193, 193);
+}
+
+.menuItem:nth-child(2n) {
+  background-color: rgb(163, 181, 192);
+}
+
+.menuItem:hover {
+  background-color: rgb(131, 137, 226);
+  box-shadow: 2px 10px 10px rgb(146, 148, 177);
+  color: white;
+  transform: scale(1.15);
+}
+
+.menuItem h3 {
+  font-size: 1.7em;
+  margin-top: 80%;
+}
+
+#addProd {
+  grid-area: addProd;
+  background-image: url(icons/addprod.jpg);
+}
+
+#UpdateStock {
+  grid-area: UpdateStock;
+  background-image: url(icons/updateStock.jpg);
+}
+
+#removeProd {
+  grid-area: removeProd;
+  background-image: url(icons/removeProd.jpg);
+}
+
+#updateProd {
+  grid-area: updateProd;
+  background-image: url(icons/updatePrice.jpg);
+}
+
+#ViewTran {
+  grid-area: ViewTran;
+  background-image: url(icons/viewTran.jpg);
+}
+
+#ViewAnalytics {
+  grid-area: ViewAnalytics;
+  background-image: url(icons/ViewAnalytics.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sideBar {
+  position: relative;
+  float: left;
+  width: 15%;
+  box-shadow: 2px 10px 10px rgb(102, 76, 76);
+  height: 100%;
+  background-color: rgb(90, 46, 194);
+}
+
+
+.sideBar .sideBarBottom{
+  position: absolute;
+  bottom: 3%;
+  padding-top: 1%;
+  height: 70%;
+  margin-left: 1%;
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0px 10px 10px 10px rgb(22, 24, 138); 
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.sideBarBottom::-webkit-scrollbar{
+  width: 2px;
+}
+
+.sideBarBottom .sideMenuItem{
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10%;
+  background-repeat: no-repeat;
+  background-position: left 12% center;
+  transition: 0.2s;
+  background-size: 10%;
+}
+
+.sideMenuItem:hover{
+  box-shadow: 3px 3px 3px rgb(17, 10, 80);
+  transform: scale(0.95);
+  color: rgb(215, 236, 236);
+}
+.sideMenuItem span{
+  padding-left: 20%;
+}
+
+.sideBarBottom #homePage {
+  background-image: url(icons/home.png);
+}
+
+.sideBarBottom #add {
+  background-image: url(icons/add.png);
+}
+
+.sideBarBottom #stock {
+  background-image: url(icons/stock.png);
+}
+
+.sideBarBottom #remove {
+  background-image: url(icons/remove.png);
+}
+
+
+.sideBarBottom #update {
+  background-image: url(icons/update.png);
+}
+
+.sideBarBottom #tran {
+  background-image: url(icons/tran.png);
+}
+
+.sideBarBottom #analytics {
+  background-image: url(icons/graph.png);
+}
+
+.sideBarBottom #logOut {
+  background-image: url(icons/logout.png);
+}
+
+
+
+
+
+
+
+
+
+
+.sideBar .sideBarTop{
+  position: absolute;
+  top: 1%;
+  margin-top: 4%;
+  height: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  box-sizing: border-box;
+  background-color: inherit;
+  box-shadow: 0px 8px 8px 8px rgb(61, 27, 141);
+  border-radius: 25%;
+  background-image: url(icons/senqlogo.png);
+  background-repeat: no-repeat;
+  background-position: center bottom 20px;
+  background-size: 80% ;
+  text-align: center;
+  font-size: 1.5em;
+  transition: 0.15s;
+}
+.sideBarTop span{
+  display: block;
+  color: white;
+  padding-top: 65%;  
+  padding-bottom: 10%;
+}
+
+.sideBarTop:hover{
+  animation: rotate 1s ease-in-out both;
+  background-color: rgb(80, 37, 180);
+  box-shadow: 0px 7px 20px 20px rgb(61, 27, 141);
+}
+
+@keyframes rotate{
+  0%{ transform: rotate(0deg);}
+  10%{ transform: rotate(12deg);}
+  20%{ transform: rotate(-12deg);}
+  30%{ transform: rotate(10deg);}
+  40%{ transform: rotate(-10deg);}
+  50%{ transform: rotate(7deg);}
+  60%{ transform: rotate(-7deg);}
+  70%{ transform: rotate(3deg);}
+  80%{ transform: rotate(-3deg);}
+  90%{ transform: rotate(2deg);}
+  92%{ transform: rotate(-2deg);}
+  94%{ transform: rotate(1deg);}
+  96%{ transform: rotate(-1deg);}  
+  100%{ transform: rotate(0deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topBar {
+  float: right;
+  width: 85%;
+  height: 10%;
+  background-color: rgb(48, 7, 122);
+  box-shadow: 4px 4px 7px rgb(48, 47, 47);
+}
+.topBar>*{
+  height: 100%;
+  float: right;
+  display: block;
+}
+.topBar #admin{
+  position: relative;
+  width: 40%;
+  margin-right: 10%;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.topBar #admin img{
+  width: 160%;
+  height: 160%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.topBar #admin #adminLogoBgVideo{
+  position: relative;
+  z-index: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: fill;
+  overflow: hidden;
+}
+
+
+.topBar #timeDateWeather{
+  z-index: 3;
+  position: relative;
+  border-radius: 15px;
+  width: 270px;
+  border: 1px solid black;
+  height: 100%;
+  float: left;
+  margin-left: 3%;
+  background-color: inherit;
+  font-family: 'Segoe UI';
+  color: white;
+  transition: 0.15s;
+  background-image: url(icons/clock.png);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: center left;
+}
+#timeDateWeather:hover, #weather {
+  transform: scale(1.07);
+  box-shadow: 1px 10px 10px 2px #2f2f30;
+}
+#timeDateWeather #date{
+  padding-left: 17%;
+  width: 100%;
+  height: 50%;
+  padding-top: 6%;
+  font-size: 1.1em;
+}
+
+#timeDateWeather #time{
+  padding-left: 17%;
+  width: 100%;
+  height: 50%;
+  font-size: 1.7em;
+}
+
+
+#timeDateWeather #weather{
+  width: 100%;
+  height: 150px;
+  background-color: inherit;
+  display: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-image: url(icons/weatherBgimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#weather #temp{
+  
+  background-image: url(icons/weatherIcon.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: right 20px top;
+  padding-top: 2%;
+  padding-left: 5%;
+  width: 100%;
+  height: 50%;
+  font-size: 3em;
+}
+
+#weather #location{
+  padding-left: 5%;
+  width: 100%;
+  height: 30%;
+  font-size: 1.8em;
+}
+
+#weather #condition{
+  padding-left: 5%;
+  width: 100%;
+  height: 20%;
+  font-size: 1em;
+}
+
+
+
+
+/* for tablets*/
+@media (max-width:1200px) and (min-device-width: 800px) {
+  .sideBar{
+    width: 8%;
+  }
+  .topBar, .mainPanel{
+    width: 92%;
+  }
+  .topBar #timeDateWeather{
+    width: 270px;
+  }
+  .sideBarTop{
+    display: none;
+  }
+  .sideBarBottom .sideMenuItem{
+    height: 12%;
+    background-position: center;
+    background-size: 35%;
+
+  }
+  .sideMenuItem span{
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* for Phone not allowed*/
+@media (max-width:800px) {
+  body *{
+    display: none;
+  }
+
+  body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(141, 154, 168);
+  }
+  body #ShowWhenWindowISTooSmall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(235, 91, 47);
+    border-radius: 30px;
+    box-shadow: 4px 2px 10px 15px rgb(97, 110, 124);
+    font-size: 2em;
+    transition: 0.15s;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #ShowWhenWindowISTooSmall:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 10px 15px 25px rgb(88, 100, 113);
+  }
+}

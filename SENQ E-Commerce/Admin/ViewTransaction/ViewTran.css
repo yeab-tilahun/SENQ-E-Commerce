@@ -1,0 +1,186 @@
+.viewTran * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.viewTran {
+    display: block;
+    background-color: rgb(231, 216, 216,0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 7px 10px 20px rgb(95, 72, 72);
+    position: absolute;/*very Important*/
+    overflow: auto;
+    margin: 0;
+    margin-left: 5%;/* must remove*/
+    margin-top: 1%;
+    padding: 0;
+    box-sizing: border-box;
+    width: 90%;
+    height: 95%;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+.viewTran .viewTranMiddleArea {
+    overflow: hidden;
+    width: 100%;
+    height: 45%;
+    border-top: 1px solid rgb(144, 129, 129);
+}
+.viewTranMiddleArea #caption{
+    text-align: center;
+    color: rgb(137, 16, 82);
+}
+
+.viewTranMiddleArea .transTable {
+    border-collapse: collapse;
+    box-shadow: 0px 5px 10px rgb(111, 113, 116);
+    text-align: left;
+    width: 95%;
+    height: 90%;
+    margin-left: 2.5%;
+    display: block;
+    overflow: scroll;
+}
+.transTable td, .transTable th{
+    width: 10%;
+}
+.transTable::-webkit-scrollbar{
+    width: 0px;
+}
+.transTable thead{
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    box-shadow: 0 5px 10px rgb(185, 173, 173);
+    background-color: rgb(117, 103, 245);
+    color: white;
+    border: none;
+    letter-spacing: 0.05em;
+    height: 35px;
+}
+.transTable thead th{
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.transTable tbody::-webkit-scrollbar{
+    width: 0px;
+}
+.transTable td{
+    padding-left: 20px;
+    letter-spacing: 0.05em;
+    height: 40px;
+    font-size: 1.6em;
+    overflow: hidden;
+}
+
+.transTable tbody tr:nth-child(even){
+    background-color: rgb(182, 224, 235);
+}
+.transTable tbody tr:nth-child(odd){
+    background-color: rgb(146, 186, 196);
+}
+
+.transTable tbody tr{
+    transition: 0.15s;
+}
+
+.transTable tbody tr:hover{
+    transform: scale(1.02);
+    background-color: rgb(78, 96, 176);
+    color: white;
+}
+
+
+
+
+
+.viewTran .viewTranBottomArea {
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    border-top: 1px solid rgb(115, 103, 103);
+}
+
+.viewTranBottomArea #caption{
+    display: inline;
+    color: rgb(137, 16, 82);
+}
+.viewTranBottomArea #selectedTransaction{
+    display: inline;
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 5px;
+}
+.viewTranBottomArea .transDetailsTable {
+    border-collapse: collapse;
+    box-shadow: 0px 5px 10px rgb(111, 113, 116);
+    text-align: left;
+    width: 95%;
+    height: 75%;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    display: block;
+    overflow: scroll;
+}
+.transDetailsTable td, .transDetailsTable th{
+    width: 10%;
+}
+.transDetailsTable::-webkit-scrollbar{
+    width: 0px;
+}
+.transDetailsTable thead{
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    box-shadow: 0 5px 10px rgb(185, 173, 173);
+    background-color: rgb(117, 103, 245);
+    color: white;
+    border: none;
+    letter-spacing: 0.05em;
+    height: 35px;
+}
+.transDetailsTable thead th{
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.transDetailsTable tbody::-webkit-scrollbar{
+    width: 0px;
+}
+.transDetailsTable td{
+    padding-left: 20px;
+    letter-spacing: 0.05em;
+    height: 40px;
+    font-size: 1.6em;
+    overflow: hidden;
+}
+
+.transDetailsTable tbody tr:nth-child(even){
+    background-color: rgb(182, 224, 235);
+}
+.transDetailsTable tbody tr:nth-child(odd){
+    background-color: rgb(146, 186, 196);
+}
+
+.transDetailsTable tbody tr{
+    transition: 0.15s;
+}
+
+.transDetailsTable tbody tr:hover{
+    transform: scale(1.02);
+    background-color: rgb(78, 96, 176);
+    color: white;
+}

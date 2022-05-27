@@ -1,0 +1,205 @@
+.addProdForm *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.addProdForm{
+    background-color: rgb(231, 216, 216, 0.6);
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 5px 20px 3px rgb(87, 69, 69);
+    margin-top: 10px;
+    margin-left: 10%; /* must remove*/
+    position: absolute; /*very Important*/
+    overflow: auto;
+    display: block ;
+    width: 75%;
+    height: 90%;
+    border-radius: 2%;
+}
+
+.addProdForm p{
+    padding-top: 4%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    font-size: 1.15em;
+    font-weight: 600;
+    text-align: start;
+}
+
+.formLeft{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.formLeft .inputTextField{
+    margin-left: 5%;
+    width: 80%;
+    height: 8%;
+    padding: 2%;
+    border: none;
+    font-size: large;
+    font-weight: 550;
+    background-color: rgb(196, 207, 218);
+    border-radius: 10px;
+    box-shadow: 3px 5px 4px rgb(216, 179, 179);
+    transition: 0.15s;
+}
+
+.formLeft .inputTextField:hover{
+    transform: scale(1.05);
+    background-color: rgb(170, 178, 185);
+}
+
+.formLeft .inputTextArea{
+    margin-left: 5%;
+    width: 80%;
+    height: 20%;
+    padding: 2%;
+    font-size: 1.5em;
+    font-weight: 550;
+    background-color: rgb(205, 218, 230);
+    border-radius: 20px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 3px 5px 4px rgb(216, 179, 179);
+    transition: 0.15s;
+}
+.formLeft .inputTextArea:hover{
+    transform: scale(1.05);
+    background-color: rgb(202, 208, 214);
+}
+
+
+.formRight{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.formRight #imgFilePanel{
+    width: 85%;
+    height: 75%;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(151, 153, 177);
+    transition: 0.15s;
+
+}
+
+.formRight #imgFilePanel:hover{
+    transform: scale(1.05);
+    background-color: rgb(156, 175, 180);
+}
+#imgFilePanel img{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+#imgFilePanel input{
+    display: none;
+}
+
+#imgFilePanel label{
+    opacity: 40%;
+    display: block;
+    position: relative;
+    bottom: 30%;
+    left: 45%;
+    background-image: url(../icons/addImg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(159, 98, 224);
+    box-shadow: 2px 2px 5px rgb(175, 151, 151);
+    transition: 0.15s;
+}
+#imgFilePanel label:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    background-color: rgb(138, 77, 202);
+    box-shadow: 2px 2px 5px rgb(104, 87, 87)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formRight .submitButton{
+    background-image: url(../icons/add.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center left 5px;
+    color: white;
+    font-size: 1.2em;
+    text-align: end;
+    font-weight: 550;
+    padding-right: 2%;
+    margin: 5%;
+    margin-left: 1%;
+    width: 40%;
+    height: 10%;
+    float: right;
+    border: none;
+    border-radius: 7px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(159, 98, 224);
+    box-shadow: 2px 2px 5px rgb(175, 151, 151);
+    transition: 0.15s;
+
+}
+.formRight .submitButton:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 10px 10px rgb(175, 151, 151);
+    background-color: rgb(84, 84, 187);
+}
+.formRight .resetButton{
+    background-image: url(../icons/remove.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center left 5px;
+    font-size: 1.2em;
+    text-align: end;
+    font-weight: 550;
+    padding-right: 3%;
+    margin: 5%;
+    margin-right: 2%;
+    width: 25%;
+    height: 10%;
+    float: right;
+    border: none;
+    border-radius: 7px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(193, 187, 207);
+    box-shadow: 2px 2px 5px rgb(175, 151, 151);
+    transition: 0.15s;
+}
+
+.resetButton:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 10px 10px rgb(175, 151, 151);
+    background-color: rgb(148, 176, 177);
+}

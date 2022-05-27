@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Main Panel</title>
+    <link rel="stylesheet" href="adminMainPanel.css" />
+  </head>
+
+  <body>
+    <div id="ShowWhenWindowISTooSmall">Please Resize Your Browser to a larger Screen!</div>
+    <section class="topBar">
+      <div id="admin">
+        <video id="adminLogoBgVideo" autoplay loop muted>
+          <source src="icons/adminLogo.MP4" type="video/MP4" >
+          Your browser does not support the video tag.
+        </video>
+        <img src="icons/Admin.svg">
+      </div>
+      <div id="timeDateWeather" >
+        <div id="date">
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>/
+          <span id="daynum">00</span>/
+          <span id="year">Year</span>
+        </div>
+        <div id="time">
+          <span id="hour">00</span> :
+          <span id="minutes">00</span> : 
+          <span id="seconds">00</span>  
+          <span id="period">AM</span>
+        </div>
+        <div id="weather">
+          <div id="temp"></div>
+          <div id="location">Addis Ababa</div>
+          <div id="condition"></div>
+        </div>
+      </div>
+    </section>
+    <section class="sideBar">
+      <div class="sideBarTop"><span>SENQ</span></div>
+      <div class="sideBarBottom">
+        <button class="sideMenuItem" id="homePage">
+          <span>Home</span>
+        </button>
+        <button class="sideMenuItem" id="add">
+          <span>Product Add</span>
+        </button>
+        <button class="sideMenuItem" id="stock">
+          <span>Stock Update</span>
+        </button>
+        <button class="sideMenuItem" id="remove">
+          <span>Remove</span>
+        </button>
+        <button class="sideMenuItem" id="update">
+          <span>Price Update</span>
+        </button>
+        <button class="sideMenuItem" id="tran">
+          <span>Transactions</span>
+        </button>
+        <button class="sideMenuItem" id="analytics">
+          <span>Analytics</span>
+        </button>
+        <button class="sideMenuItem" id="logOut">
+          <span>Log Out</span>
+        </button>
+      </div>
+    </section>
+    <section class="mainPanel">
+       <video id="bgVideo" autoplay loop muted class="bgVideoTag">
+         <source src="" type="video/mp4" >
+         Your browser does not support the video tag.
+       </video>
+      <iframe  src="" frameborder="0" width="100%" height="100%" style="display: none; "></iframe>
+      <div class="mainMenu" style="display: grid;">
+        <button  class="menuItem" id="addProd">
+          <h3>Add New Products</h3>
+        </button>
+        <button  class="menuItem" id="UpdateStock">
+          <h3>Update Product Stock</h3>
+        </button>
+        <button class="menuItem" id="removeProd">
+          <h3>Remove a Product</h3>
+        </button>
+        <button class="menuItem" id="updateProd">
+          <h3>Update Product Price</h3>
+        </button>
+        <button  class="menuItem" id="ViewTran">
+          <h3>View Transactions</h3>
+        </button>
+        <button  class="menuItem" id="ViewAnalytics">
+          <h3>View Sales Analytics</h3>
+        </button>
+      </div>
+    </section>
+    <script src="adminMainPanel.js"></script>
+  </body>
+</html>
