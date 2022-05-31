@@ -2,7 +2,7 @@
 -> This is an ecommerce web application called SENQ developed using HTML, CSS, Js, jQuery and PHP for school project
 -> To run this project you need to install Xampp or wamp, Microsoft SQL server and an updated browser
 
-#To Get Started 
+# To Get Started 
 
 1. First import the database file in to MS SQL that is included in the EcomDB folder called importMe.SQL
 
@@ -19,5 +19,5 @@
 
 
 
-#If you like this project give it a star 👍
+# If you like this project give it a star 👍
 
