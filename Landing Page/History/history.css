@@ -1,0 +1,78 @@
+.viewTran * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.viewTran{
+    text-align: center;
+    padding-top: 7%;
+}
+.transDetailsTable {
+    border-collapse: collapse;
+    box-shadow: 0px 5px 10px rgb(111, 113, 116);
+    text-align: left;
+    width: 95%;
+    height: 75%;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    display: block;
+    overflow: scroll;
+}
+.transDetailsTable td, .transDetailsTable th{
+    width: 10%;
+}
+.transDetailsTable::-webkit-scrollbar{
+    width: 0px;
+}
+.transDetailsTable thead{
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    box-shadow: 0 5px 10px rgb(185, 173, 173);
+    background-color: #E9E2D0;
+    color: rgb(27, 22, 22);
+    border: none;
+    letter-spacing: 0.05em;
+    height: 35px;
+}
+.transDetailsTable thead th{
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.transDetailsTable tbody::-webkit-scrollbar{
+    width: 0px;
+}
+.transDetailsTable td{
+    padding-left: 20px;
+    letter-spacing: 0.05em;
+    height: 40px;
+    font-size: 1.6em;
+    overflow: hidden;
+}
+
+.transDetailsTable tbody tr:nth-child(even){
+    background-color: rgb(182, 224, 235);
+}
+.transDetailsTable tbody tr:nth-child(odd){
+    background-color: rgb(146, 186, 196);
+}
+
+.transDetailsTable tbody tr{
+    transition: 0.15s;
+}
+
+.transDetailsTable tbody tr:hover{
+    transform: scale(1.02);
+    background-color: rgb(78, 96, 176);
+    color: white;
+}
+
+@media (max-width: 420px){
+    
+.viewTran{
+    text-align: center;
+    padding-top: 20%;
+}
+}
